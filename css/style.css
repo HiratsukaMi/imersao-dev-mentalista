@@ -1,17 +1,17 @@
 body {
     font-family: "Roboto Mono", monospace;
     min-height: 600px;
-    background-image: url("https://i.pinimg.com/originals/85/fc/ce/85fcce18be5f87d221d2d497c7d1cb5e.jpg");
-    background-size: 55vh;
     background-color: #000000;
-    background-position: center bottom;
-    background-repeat: no-repeat;
   }
   
   .container {
     text-align: center;
     padding: 20px;
     height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/85/fc/ce/85fcce18be5f87d221d2d497c7d1cb5e.jpg");
+    background-size: 45vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
   }
   
   .page-title {
@@ -19,6 +19,10 @@ body {
     font-size: 50px;
     color: #ffffff;
     margin: 0 0 5px;
+  }
+
+  p {
+    margin: 10px;
   }
   
   .page-subtitle {
@@ -39,7 +43,7 @@ body {
   }
   
   input {
-    margin: 4px;
+    margin: 20px 4px 4px 4px;
     padding: 6px;
     border-radius: 5px;
   }
@@ -51,6 +55,7 @@ body {
     background: #ffffff;
   }
   
+  .pontosDeSanidade,
   .resultado {
     font-size: 20px;
     color: #ffffff;
