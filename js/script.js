@@ -1,9 +1,12 @@
-var numeroSecreto = parseInt(Math.random() * 11);
+var numeroSecreto = 0;
+var elementoResultado = document.getElementById("resultado");
 var tentativas = 5;
 
+function Sortear(){
+    numeroSecreto = parseInt(Math.random() * 11);
+}
+
 function Chutar(){
-    debugger;
-    var elementoResultado = document.getElementById("resultado");
     var chute = parseInt(document.getElementById("valor").value);
 
     if(chute > 10 || chute < 0){
@@ -20,6 +23,12 @@ function Chutar(){
     } 
     
     if(tentativas == 0){
-        elementoResultado.innerHTML = "Seu número de tentativas acabou. Você enlouqueceu.";
+        elementoResultado.innerHTML = "Seu número de tentativas acabou. Você enlouqueceu. (O número secreto é: " + numeroSecreto + ")";
     }
+}
+
+function JogarNovamente() {
+    Sortear();
+    tentativas = 5;
+    elementoResultado.innerHTML = "Novo jogo. Sua sanidade está restaurada! (Número de tentativas: " + tentativas + ")";
 }
